@@ -1,0 +1,17 @@
+package com.http;
+
+import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+import org.testng.annotations.Test;
+
+public class PutUser {
+	@Test
+	void post_test() {
+
+		String bt = "cc695d1c503f57f381f18d9932783192eddbbc72f3550fcbfd748f5ae4290479";
+		int id = given().headers("Authorization", "Bearer " + bt).contentType("application/json").body(data.toString())
+				.when().post("https://gorest.co.in/public/v2/users").jsonPath().getInt("id");
+	}
+}

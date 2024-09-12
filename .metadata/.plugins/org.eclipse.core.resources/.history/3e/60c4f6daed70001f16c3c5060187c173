@@ -1,0 +1,16 @@
+package com.http;
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import org.testng.annotations.Test;
+
+public class GETuser {
+	@Test
+	void test_get() {
+		String bt = "cc695d1c503f57f381f18d9932783192eddbbc72f3550fcbfd748f5ae4290479";
+
+	}
+
+}

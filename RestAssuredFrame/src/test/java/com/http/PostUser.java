@@ -1,0 +1,30 @@
+package com.http;
+
+import static io.restassured.RestAssured.given;
+
+import org.json.JSONObject;
+import org.testng.ITestContext;
+import org.testng.annotations.Test;
+
+import com.github.javafaker.Faker;
+
+public class PostUser {
+	@Test
+	void tes_createuser(ITestContext context) {
+		Faker f = new Faker();
+		JSONObject data = new JSONObject();
+		data.put("name", f.name().fullName());
+		data.put("gender", "Male");
+		data.put("email", f.internet().emailAddress());
+		data.put("status", "inactive");
+
+		String bt = "cc695d1c503f57f381f18d9932783192eddbbc72f3550fcbfd748f5ae4290479";
+		int id = given().headers("Authorization", "Bearer " + bt).contentType("application/json").body(data.toString())
+				.when().post("https://gorest.co.in/public/v2/users").jsonPath().getInt("id");
+//		ResponseBody body = id.getBody();
+//		System.out.println(body);
+		System.out.println("ID value is  " + id);
+		// context.setAttribute("user_id", id); // we have to set id in variable name
+		context.getSuite().setAttribute("user_id", id);
+	}
+}

@@ -1,0 +1,27 @@
+package com.http;
+
+import org.json.JSONObject;
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+import com.github.javafaker.Faker;
+
+import io.restassured.response.Response;
+
+public class PostUser {
+	@Test
+	void tes_createuser() {
+		Faker f = new Faker();
+		JSONObject data = new JSONObject();
+		data.put("name", f.name().fullName());
+		data.put("gender", "Male");
+		data.put("email", f.internet().emailAddress());
+		data.put("status", "inactive");
+
+		String bt = "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";
+		int id = given().headers("Authorization", "Bearer " + bt).contentType("application/json").body(data.toString())
+				.when().post("https://gorest.co.in/public/v2/users").jsonPath().getInt("id");
+		System.out.println("ID value is  " + id);
+	}
+}

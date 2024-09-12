@@ -1,0 +1,21 @@
+package com.Rest1;
+
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+import io.restassured.response.Response;
+
+public class JsonParsing {
+	@Test
+	void testJsonParsing() {
+//APPRAOCH 1
+		/*
+		 * given().contentType("contentType.JSON").when().get(
+		 * "https://reqres.in/api/users?page=2").then().statusCode(200)
+		 * .header("content-Type", "application/json; charset=utf-8")
+		 * .body("data[4].email", equalTo("george.edwards@reqres.in"));
+		 */
+		// APPRAOCH 2
+	}
+}

@@ -1,0 +1,16 @@
+package com.Rest1;
+
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+import org.testng.annotations.Test;
+
+public class CookiesDEmo {
+	@Test(priority = 1)
+	void testCookies() {
+		given().when().get("https://www.google.com/").then()
+				.cookie("AEC", "AVYB7cqXEYNj0AysZ4edi0VqU1PcsEk2H4NT_EE9Fqo7zcI7Hba1earLy3k")
+
+				.log().all();
+	}
+}

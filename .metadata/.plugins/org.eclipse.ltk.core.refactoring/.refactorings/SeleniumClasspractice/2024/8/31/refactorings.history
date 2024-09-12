@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ActionClass.java&apos; to &apos;SeleniumClasspractice/src/test/java/com.actrion&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumClasspractice&apos;&#x0D;&#x0A;- Destination element: &apos;SeleniumClasspractice/src/test/java/com.actrion&apos;&#x0D;&#x0A;- Original element: &apos;com.locators.ActionClass.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.actrion" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.locators{ActionClass.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1722516678862" units="1" version="1.0"/>
+</session>
