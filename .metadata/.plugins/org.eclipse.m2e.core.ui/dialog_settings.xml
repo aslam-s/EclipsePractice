@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\CIPL1593\eclipse-workspace\RestAssuredFrame"/>
 			<item value="C:\Users\CIPL1593\eclipse-workspace\CucumberFrameworkClass\src\test\java\stepDefinition\RunnerClass.java"/>
 			<item value="C:\Users\CIPL1593\eclipse-workspace\DataDrivenfm\src\test\java\com\data\Readingdatafromexcel.java"/>
 			<item value="C:\Users\CIPL1593\eclipse-workspace\Seleniumclass\src\test\java\com\sele\flipkartsample.java"/>
@@ -48,10 +49,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.petsyorerest"/>
+			<item value="Com.rest"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="PetStoreRestAssured"/>
+			<item value="RestAssuredFrame"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
