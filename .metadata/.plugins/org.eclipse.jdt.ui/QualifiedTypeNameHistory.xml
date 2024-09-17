@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.aventstack.extentreports.reporter.ExtentSparkReporter"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.reporter.configuration.Theme"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentReports"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.Status"/>
@@ -10,7 +9,6 @@
     <fullyQualifiedTypeName name="testCases.BaseClass"/>
     <fullyQualifiedTypeName name="freemarker.log.Logger"/>
     <fullyQualifiedTypeName name="java.util.logging.LogManager"/>
-    <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
     <fullyQualifiedTypeName name="jdk.internal.org.jline.utils.Log"/>
     <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
@@ -33,7 +31,6 @@
     <fullyQualifiedTypeName name="testbase.BaseClass"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.awt.Desktop"/>
-    <fullyQualifiedTypeName name="org.testng.ITestListener"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
     <fullyQualifiedTypeName name="pageObjects.loginPage"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
     <fullyQualifiedTypeName name="api.endpoints.UserEndPoints"/>
     <fullyQualifiedTypeName name="org.testng.Assert"/>
+    <fullyQualifiedTypeName name="org.testng.ITestListener"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+    <fullyQualifiedTypeName name="java.util.ResourceBundle"/>
 </qualifiedTypeNameHistroy>
